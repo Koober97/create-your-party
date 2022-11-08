@@ -82,6 +82,7 @@ function bufferFunction(managerdata) {
       }
     });
 }
+
 function promptEmployees(employeeList) {
   return inquirer
     .prompt([
@@ -167,3 +168,22 @@ function promptEmployees(employeeList) {
       return another ? promptEmployees(employeeList) : employeeList;
     });
 }
+
+promptManager()
+  .then((manager) => bufferFunction(manager))
+  .then((checkforadd) => {
+    return checkforadd[1] ? promptEmployees(checkforadd[0]) : checkforadd[0];
+  })
+  .then((data) => generatePage(data))
+  .then((html) => 
+    fs.writeFile("./dist/index.html", html, (err) => {
+      if (err) {
+        throw err;
+      }
+      console.log(
+        "File has been written! Check the 'dist' folder for the 'index.html' file!"
+      );
+    })
+  );
+    
+  
