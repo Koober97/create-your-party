@@ -18,7 +18,12 @@
   "homepage": "https://github.com/Koober97/create-your-party#readme",
   "dependencies": {
     "express": "^4.18.2",
-    "inquirer": "^8.2.4",
-    "jest": "^29.3.0"
+    "inquirer": "^8.2.4"
+  },
+  "devDependencies": {
+    "jest": "^29.3.1"
+  },
+  "directories": {
+    "lib": "lib"
   }
 }
