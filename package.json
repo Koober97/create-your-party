@@ -17,7 +17,6 @@
   },
   "homepage": "https://github.com/Koober97/create-your-party#readme",
   "dependencies": {
-    "express": "^4.18.2",
     "inquirer": "^8.2.4"
   },
   "devDependencies": {
