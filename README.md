@@ -14,7 +14,8 @@
 ## Screenshot of Code
 -
 
-## Deployed Link
--
+## Links
+- Link to Demo Video
+- Link to Repository
 
 ### Created by Brian Koo
